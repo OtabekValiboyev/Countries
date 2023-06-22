@@ -72,6 +72,8 @@ body {
   background-color: var(--page-bg-color);
   margin: 0;
   padding: 0;
+  transition: color 0.4s ease,
+    background-color 0.4s ease;
 }
 
 img {
@@ -103,6 +105,8 @@ a {
   padding-bottom: 24px;
   background-color: var(--element-bg);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  transition: color 0.4s ease,
+    background-color 0.4s ease;
 }
 
 .site-header-container {
