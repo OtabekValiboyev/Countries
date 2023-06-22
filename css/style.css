@@ -99,6 +99,10 @@ a {
   flex-grow: 1;
 }
 
+.main-content-inner {
+  padding-top: 80px;
+}
+
 /* SITE-HEADER  */
 .site-header {
   padding-top: 24px;
@@ -264,4 +268,137 @@ a {
 
 .index-country-details-value {
   margin-left: 4px;
+}
+
+
+/* COUNTRY-PAGE  */
+.countr-page-back-wrapper {
+  margin-bottom: 80px;
+}
+
+.countr-page-back-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  border-radius: 6px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
+}
+
+.countr-page-back-link:hover {
+  opacity: 0.8;
+}
+
+.countr-page-back-link:active {
+  opacity: 0.6;
+}
+
+.country-page-back-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.country-page-back-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.country-page-flag-info {
+  display: flex;
+}
+
+.country-page-flag {
+  width: 560px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.03);
+}
+
+.country-page-info {
+  width: 600px;
+  padding-top: 40px;
+}
+
+.country-page-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 800;
+}
+
+.country-page-dls-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.country-page-details {
+  width: 250px;
+}
+
+.country-page-details-item {
+  display: flex;
+}
+
+.country-page-details-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.country-page-details-title {
+  margin-right: 4px;
+  font-weight: 600;
+}
+
+.country-page-details-value {
+  margin: 0;
+  font-weight: 300;
+}
+
+.country-page-border-countries {
+  display: flex;
+  align-items: center;
+}
+
+.country-page-border-countries-heading {
+  margin: 0;
+  margin-right: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.country-page-border-countries-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country-page-border-countries-link {
+  min-width: 96px;
+  padding: 5px 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+  transition: color 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.country-page-border-countries-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.country-page-border-countries-link:hover {
+  opacity: 0.8;
+}
+
+.country-page-border-countries-link:hover {
+  opacity: 0.6;
 }
