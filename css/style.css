@@ -1,8 +1,7 @@
 /* CUSTOM PROPS  */
 :root {
   --text-color: #111517;
-  --page-bg-color: #fafafa;
-  --text-size: 16px;
+  --body-bg-color: #fafafa;
   --element-bg: #fff;
 }
 
@@ -10,7 +9,7 @@
 @font-face {
   font-family: 'Nunito Sans 7pt Condensed';
   src: url('../fonts/NunitoSans7ptCondensed-ExtraBold.woff2') format('woff2'),
-      url('../fonts/NunitoSans7ptCondensed-ExtraBold.woff') format('woff');
+    url('../fonts/NunitoSans7ptCondensed-ExtraBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -19,7 +18,7 @@
 @font-face {
   font-family: 'Nunito Sans 7pt Condensed';
   src: url('../fonts/NunitoSans7ptCondensed-Light.woff2') format('woff2'),
-      url('../fonts/NunitoSans7ptCondensed-Light.woff') format('woff');
+    url('../fonts/NunitoSans7ptCondensed-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -28,7 +27,7 @@
 @font-face {
   font-family: 'Nunito Sans 7pt Condensed';
   src: url('../fonts/NunitoSans7ptCondensed-Regular.woff2') format('woff2'),
-      url('../fonts/NunitoSans7ptCondensed-Regular.woff') format('woff');
+    url('../fonts/NunitoSans7ptCondensed-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,7 +36,7 @@
 @font-face {
   font-family: 'Nunito Sans 7pt Condensed';
   src: url('../fonts/NunitoSans7ptCondensed-SemiBold.woff2') format('woff2'),
-      url('../fonts/NunitoSans7ptCondensed-SemiBold.woff') format('woff');
+    url('../fonts/NunitoSans7ptCondensed-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -67,7 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Nunito Sans', 'Arial', sans-serif;
-  font-size: var(--text-size);
+  font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--page-bg-color);
@@ -76,11 +75,82 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* SITE-HEADER  */
+.site-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--element-bg);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap ;
+}
+
+.site-header-logo {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.site-header-logo:hover {
+  opacity: 0.8;
+}
+
+.site-header-logo:active {
+  opacity: 0.6;
+}
+
+.site-header-theme-toggler {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.site-header-theme-toggler:hover {
+  opacity: 0.8;
+}
+
+.site-header-theme-toggler:active {
+  opacity: 0.6;
+}
+
+.site-header-theme-toggler-inner {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.site-header-theme-toggler-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-left: 8px;
 }
