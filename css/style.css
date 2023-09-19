@@ -180,6 +180,9 @@ a {
   padding: 18px 74px;
   border: 0;
   background-color: var(--element-bg);
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: left 32px center;
   color: var(--text-color);
   font-size: 14px;
   line-height: 20px;
